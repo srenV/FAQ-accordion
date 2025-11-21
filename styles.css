@@ -10,6 +10,7 @@ body {
   background-image: url(./assets/images/background-pattern-desktop.svg);
   background-color: hsl(275, 100%, 97%);
   background-repeat: no-repeat;
+  background-size: contain;
   height: 100dvh;
   margin: 0;
   display: flex;

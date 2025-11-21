@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+  color: hsl(292, 42%, 14%);
+}
+
+body {
+  background-image: url(./assets/images/background-pattern-desktop.svg);
+  background-color: hsl(275, 100%, 97%);
+  background-repeat: no-repeat;
+  height: 100dvh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 1em;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3.5em;
+}
+
+p {
+  color: hsl(292, 16%, 49%);
+  position: relative;
+  top: -1.5em;
+}
+
+.wrapper {
+  height: 40em;
+  width: 40em;
+  background-color: hsl(0, 100%, 100%);
+  padding: 3em;
+  border-radius: 1em;
+}
+
+.starWrap {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  margin-bottom: 2em;
+}
+
+summary {
+  font-weight: 700;
+}
+
+details summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6em;
+}
+
+.borderStyleClass {
+  border-top: 1px solid hsl(275, 100%, 97%);
+}
+
+/* details marker change */
+details summary::after {
+  content: url(./assets/images/icon-plus.svg);
+}
+
+details[open] summary::after {
+  content: url(./assets/images/icon-minus.svg);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(292, 16%, 49%);
+}
+.attribution a {
+  color: hsl(292, 42%, 14%);
+  text-decoration: none;
+}
+
+
+@media (max-width: 450px) {
+
+    body{
+        background-image: url(./assets/images/background-pattern-mobile.svg);
+        background-size: contain;
+    }
+
+    .wrapper{
+        width: 90%;
+        height: fit-content;
+        border-radius: .5em;
+        padding: 1.5em;
+    }
+
+    .starWrap{
+        gap: .5em;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+
+    img{
+        scale: 60%
+    };
+
+    
+
+    
+}
